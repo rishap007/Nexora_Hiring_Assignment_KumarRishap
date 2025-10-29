@@ -33,12 +33,14 @@ export interface IStorage {
 
 export class DBStorage implements IStorage {
   async initializeProducts() {
-    // Check if products already exist
-    const existingProducts = await db.select().from(products);
-    if (existingProducts.length > 0) {
-      return; // Products already initialized
-    }
-    const mockProducts: Product[] = [
+    try {
+      console.log("Initializing products...");
+      const existingProducts = await db.select().from(products);
+      if (existingProducts.length > 0) {
+        console.log(`${existingProducts.length} products already exist`);
+        return;
+      }
+      const mockProducts: Product[] = [
       {
         id: "prod-1",
         name: "Quantum Processor XR-9",
@@ -121,8 +123,13 @@ export class DBStorage implements IStorage {
       },
     ];
 
-    // Insert all products into the database
-    await db.insert(products).values(mockProducts);
+      // Insert all products into the database
+      await db.insert(products).values(mockProducts);
+      console.log(`Successfully inserted ${mockProducts.length} products`);
+    } catch (error) {
+      console.error("Error initializing products:", error);
+      throw error;
+    }
   }
 
   // Product operations
