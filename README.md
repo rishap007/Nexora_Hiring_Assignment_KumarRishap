@@ -1,9 +1,12 @@
 # Vibe Commerce
 
 Full-stack e-commerce platform built with React, TypeScript, Express, and SQLite.
+<img width="1920" height="1080" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/0cfa5f05-c235-4fdb-9dd9-4aa5988fc1f4" />
+
 <img width="1920" height="1080" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/af8d84db-6593-4d56-8850-312cee093741" />
 
 ## Overview
+<img width="1920" height="1080" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/383c7759-cc54-4950-b0e9-c2164fd8b363" />
 
 A complete e-commerce solution featuring product catalog management, shopping cart, wishlist, order processing, and advanced filtering capabilities. Successfully migrated from PostgreSQL to SQLite with Drizzle ORM while implementing extensive feature enhancements.
 
