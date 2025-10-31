@@ -1,6 +1,7 @@
 # Vibe Commerce
 
 Full-stack e-commerce platform built with React, TypeScript, Express, and SQLite.
+<img width="1920" height="1080" alt="Screenshot (13)" src="https://github.com/user-attachments/assets/af8d84db-6593-4d56-8850-312cee093741" />
 
 ## Overview
 
